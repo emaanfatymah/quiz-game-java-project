@@ -1,0 +1,492 @@
+import java.util.*;
+public class QuizGame {
+    public static void main(String[] args) {
+        int selection=-1,total=0,score=5;
+        display();
+           System.out.println("Rules for the QUIZ: "); 
+           System.out.println("1. There is no time limit for this quiz. "); 
+           System.out.println("2. If you manage to answer 3 questions right out of 5, You will win!"); 
+           System.out.println("3. Each correct answer will reward 5 point, no points for wrong answers."); 
+           System.out.println("Goodluck! "); 
+            System.out.println("Please Select the Quiz you want to Play:"); 
+            System.out.println("          1. TV & Entertainment"); 
+            System.out.println("          2. Gaming"); 
+            System.out.println("          3. General Knowledge"); 
+            System.out.println("          4. Mathematics"); 
+            System.out.println("          5. Programming"); 
+           Scanner uv= new Scanner(System.in);    
+           System.out.println("Choose between 1-5 :  ");  
+           selection= uv.nextInt(); 
+           switch (selection){
+            case 1:
+            System.out.println(" ____________________________________________________________________________ ");
+			System.out.println("                                                                              ");
+			System.out.println("                  Your TV & Entertainment Quiz Starts Here!                   ");
+			System.out.println(" ____________________________________________________________________________ ");
+            System.out.println("i) When was netflix founded");
+			System.out.println("1. 1990                2. 1997");
+			System.out.println("3. 2005                4. 2001");
+            Scanner b= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           int opt= b.nextInt(); 
+           if(opt==2){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 2"); 
+           }
+           System.out.println("ii) In which city of The UK does Peaky Blinders take place?");
+			System.out.println("1. Manchester          2. Liverpool");
+			System.out.println("3. Birmingham          4. London");
+            Scanner k= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           opt= k.nextInt(); 
+           if(opt==3){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 3"); 
+           }
+           System.out.println("iii) What character saves Tony Stark from space?");
+			System.out.println("1. Thor                2. Captain Marvel");
+			System.out.println("3. Captain America     4. Peter Quill");
+            Scanner e= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           opt= e.nextInt(); 
+           if(opt==2){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 2"); 
+           }
+           System.out.println("iv) What Guardians of the Galaxy characters were left after the snap?");
+			System.out.println("1. Drax                2. Nebula and Rocket");
+			System.out.println("3. Peter and Gamora    4. Rocket and Groot");
+            Scanner s= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           opt= s.nextInt(); 
+           if(opt==2){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 2"); 
+           }
+           System.out.println("v) The popular series Squid Game was produced in which country");
+			System.out.println("1. Japan               2. South Korea");
+			System.out.println("3. China               4. North Korea");
+            Scanner ac= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           opt= ac.nextInt(); 
+           if(opt==2){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 2"); 
+           }
+           System.out.println("Your Score:" +total);
+           System.out.print("/25");
+           if(total<15)
+			{
+		    	System.out.println("           ____________________________________________________________________________ ");
+				System.out.println("                                                                                        ");
+				System.out.println("                                       Sorry! You Lost.                                 ");
+				System.out.println("           ____________________________________________________________________________ ");
+			}
+			else
+			{
+				System.out.println("           ____________________________________________________________________________ ");
+				System.out.println("                                                                                        ");
+				System.out.println("                    Congratulations! You've passed the vibe check. (You WIN)  =)               ");
+				System.out.println("           ____________________________________________________________________________ ");
+            }
+            break;
+            case 2:
+            System.out.println(" ____________________________________________________________________________ ");
+			System.out.println("                                                                              ");
+			System.out.println("                  Your Gaming Quiz Starts Here!                   ");
+			System.out.println(" ____________________________________________________________________________ ");
+            System.out.println("i) The first version of Call of Duty was released in which year?");
+			System.out.println("1. 2000                2. 2003");
+			System.out.println("3. 2006                4. 2002");
+            Scanner wd= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           opt= wd.nextInt(); 
+           if(opt==3){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 3"); 
+           }
+           System.out.println("ii) How many rings are there on the Olympic flag?");
+			System.out.println("1. 4                   2. 5");
+			System.out.println("3. 9                   4. 8");
+            Scanner wf= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           opt= wf.nextInt(); 
+           if(opt==2){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 2"); 
+           }
+           System.out.println("iii) The penalty area is usually how far away from the touch line?");
+			System.out.println("1. 4 yards             2. 15 yards");
+			System.out.println("3. 22 yards            4. 18 yards");
+            Scanner l= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           opt= l.nextInt(); 
+           if(opt==4){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 4"); 
+           }
+           System.out.println("iv) How many minutes are usually played in a football match?");
+			System.out.println("1. 30                  2. 45");
+			System.out.println("3. 90                  4. 200");
+            Scanner wq= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           opt= wq.nextInt(); 
+           if(opt==3){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 3"); 
+           }
+           System.out.println("v) At which of the following cities have the Olympic games not been held twice?");
+			System.out.println("1. Athens              2. Paris");
+			System.out.println("3. London              4. Atlanta");
+            Scanner aw= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           opt= aw.nextInt(); 
+           if(opt==4){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 4"); 
+           }
+           System.out.println("Your Score:" +total);
+           System.out.print("/25");
+           if(total<15)
+			{
+		    	System.out.println("           ____________________________________________________________________________ ");
+				System.out.println("                                                                                        ");
+				System.out.println("               We don't approve you as a GAMER, go play Clash of Clans. You LOST!!!     ");
+				System.out.println("           ____________________________________________________________________________ ");
+			}
+			else
+			{
+				System.out.println("           ____________________________________________________________________________ ");
+				System.out.println("                                                                                        ");
+				System.out.println("                                Congrats! You're a Legit GAMER =)                       ");
+				System.out.println("           ____________________________________________________________________________ ");
+            }
+            break;
+            case 3:
+            System.out.println(" ____________________________________________________________________________ ");
+			System.out.println("                                                                              ");
+			System.out.println("                  Your General Knowledge Quiz Starts Here!                   ");
+			System.out.println(" ____________________________________________________________________________ ");
+            System.out.println("i) In which province maximum languages are spoken?");
+			System.out.println("1. Sindh               2. Punjab");
+			System.out.println("3. Balochistan         4. KPK");
+            Scanner p= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           opt= p.nextInt(); 
+           if(opt==2){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 2"); 
+           }
+           System.out.println("ii) How many letters are there in Urdu alphabets?");
+			System.out.println("1. 37                   2. 35");
+			System.out.println("3. 36                   4. 38");
+            Scanner kp= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           opt= kp.nextInt(); 
+           if(opt==3){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 3"); 
+           }
+           System.out.println("iii) 'Heer Ranjha' is a love story of?");
+			System.out.println("1. Punjabi             2. Sindhi");
+			System.out.println("3. Pushto              4. Saraiki");
+            Scanner ef= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           opt= ef.nextInt(); 
+           if(opt==1){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 1"); 
+           }
+           System.out.println("iv) Who composed the verses of Pakistan national Anthem?");
+			System.out.println("1. Allama Iqbal        2. Nasir Kazmi");
+			System.out.println("3. Faiz Ahmed Faiz     4. Hafiz Jallandri");
+            Scanner spo= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           opt= spo.nextInt(); 
+           if(opt==4){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 4"); 
+           }
+           System.out.println("v) How many words are in national anthem?");
+			System.out.println("1. 51                  2. 49");
+			System.out.println("3. 48                  4. 47");
+            Scanner act= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           opt= act.nextInt(); 
+           if(opt==2){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 2"); 
+           }
+           System.out.println("Your Score:" +total);
+           System.out.println("/25");
+           if(total<15)
+			{
+		    	System.out.println("           ____________________________________________________________________________ ");
+				System.out.println("                                                                                        ");
+				System.out.println("                                       Oops! You lost the quiz.                                 ");
+				System.out.println("           ____________________________________________________________________________ ");
+			}
+			else
+			{
+				System.out.println("           ____________________________________________________________________________ ");
+				System.out.println("                                                                                        ");
+				System.out.println("                                Congratulations! You won the quiz.                      ");
+				System.out.println("           ____________________________________________________________________________ ");
+            }
+            break;
+            case 4:
+            System.out.println(" ____________________________________________________________________________ ");
+			System.out.println("                                                                              ");
+			System.out.println("                  Your Mathematics Quiz Starts Here!                   ");
+			System.out.println(" ____________________________________________________________________________ ");
+            System.out.println("i) The average of first 50 natural numbers is?");
+			System.out.println("1. 32                  2. 25.5");
+			System.out.println("3. 22.6                4. 29");
+            Scanner av= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           opt= av.nextInt(); 
+           if(opt==2){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 2"); 
+           }
+           System.out.println("ii) The result of 32+5 is?");
+			System.out.println("1. 37                  2. 33");
+			System.out.println("3. 38                  4. 39");
+            Scanner ko= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           opt= ko.nextInt(); 
+           if(opt==1){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 1"); 
+           }
+           System.out.println("iii) 106 * 106 - 94 * 94?");
+			System.out.println("1. 2550                2. 2400");
+			System.out.println("3. 2200                4. 2250");
+            Scanner el= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           opt= el.nextInt(); 
+           if(opt==2){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 2"); 
+           }
+           System.out.println("iv) Which of the following numbers give 240 when added to its own square?");
+			System.out.println("1. 23                  2. 12");
+			System.out.println("3. 20                  4. 15");
+            Scanner yu= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           opt= yu.nextInt(); 
+           if(opt==4){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 4"); 
+           }
+           System.out.println("v) The simplest form of 1.5 : 2.5 is?");
+			System.out.println("1. 9:6                 2. 2:5 ");
+			System.out.println("3. 3:5                 4. 5:3");
+            Scanner ol= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           opt= ol.nextInt(); 
+           if(opt==3){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 3"); 
+           }
+           System.out.println("Your Score:" +total);
+           System.out.print("/25");
+           if(total<15)
+			{
+		    	System.out.println("           ____________________________________________________________________________ ");
+				System.out.println("                                                                                        ");
+				System.out.println("                                       Oops! You lost the quiz.                                 ");
+				System.out.println("           ____________________________________________________________________________ ");
+			}
+			else
+			{
+				System.out.println("           ____________________________________________________________________________ ");
+				System.out.println("                                                                                        ");
+				System.out.println("                                Congratulations! You won the quiz.                      ");
+				System.out.println("           ____________________________________________________________________________ ");
+            }
+            break;
+            case 5:
+            System.out.println(" ____________________________________________________________________________ ");
+			System.out.println("                                                                              ");
+			System.out.println("                  Your Programming Quiz Starts Here!                   ");
+			System.out.println(" ____________________________________________________________________________ ");
+            System.out.println("i) Identify the incorrect constructor type?");
+			System.out.println("1. friend constructor          2. Default constructor");
+			System.out.println("3. parameterized constructor   4. Copy constructor");
+            Scanner er= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           opt= er.nextInt(); 
+           if(opt==1){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 1"); 
+           }
+           System.out.println("ii) C++ uses which approach?");
+			System.out.println("1. Right-left          2. Top-down");
+			System.out.println("3. Left-right          4. Bottom-up");
+            Scanner od= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           opt= od.nextInt(); 
+           if(opt==4){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 4"); 
+           }
+           System.out.println("iii) Arrays in Java are?");
+			System.out.println("1. object references   2. primitive data types");
+			System.out.println("3. object              4. None");
+            Scanner ew= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           opt= ew.nextInt(); 
+           if(opt==3){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 3"); 
+           }
+           System.out.println("iv) Identify the modifier which cannot be used for constructor?");
+			System.out.println("1. public              2. protected");
+			System.out.println("3. private             4. static");
+            Scanner kj= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           opt= kj.nextInt(); 
+           if(opt==4){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 4"); 
+           }
+           System.out.println("v) Which of the following is a reserved keyword in Java?");
+			System.out.println("1. object              2. strictfp");
+			System.out.println("3. main                4. system");
+            Scanner tr= new Scanner(System.in);    
+           System.out.println("Option:  ");  
+           opt= tr.nextInt(); 
+           if(opt==2){
+            System.out.println("Correct Answer!"); 
+            total+=score;
+           }
+           else{
+            System.out.println("Wrong Answer"); 
+            System.out.println("Correct answer is 2"); 
+           }
+           System.out.println("Your Score:" +total);
+           System.out.print("/25");
+           if(total<15)
+			{
+		    	System.out.println("           ____________________________________________________________________________ ");
+				System.out.println("                                                                                        ");
+				System.out.println("                                       Oops! You lost the quiz.                                 ");
+				System.out.println("           ____________________________________________________________________________ ");
+			}
+			else
+			{
+				System.out.println("           ____________________________________________________________________________ ");
+				System.out.println("                                                                                        ");
+				System.out.println("                                Congratulations! You won the quiz.                      ");
+				System.out.println("           ____________________________________________________________________________ ");
+            }
+            break;
+            default:
+            System.out.println("Invalid Entry");
+    }
+    }
+    static void display(){
+        
+        System.out.println(" ____________________________________________________________________________ ");
+        System.out.println("|                                                                            |");
+        System.out.println("|                         Welcome to the Quiz Game                           | ");
+        System.out.println("|____________________________________________________________________________|");
+}
+}
